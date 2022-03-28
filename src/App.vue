@@ -1,22 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="m-0">
+    <IndexHeader/>
+    <IndexContent/>
+    <IndexFooter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import IndexHeader from './components/header.vue';
+import IndexContent from './components/Content.vue';
+import IndexFooter from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    IndexHeader,
+    IndexContent,
+    IndexFooter,
   }
 }
 </script>
 
 <style lang="scss">
+@import "./assets/style.scss"; 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,4 +31,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+@import'~bootstrap/dist/css/bootstrap.css'
 </style>
