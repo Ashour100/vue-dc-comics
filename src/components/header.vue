@@ -2,8 +2,11 @@
     <div class="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8 mx-auto">
-                    
+                <div class="col-8 mx-auto position-relative">
+                    <div class="img">
+                        <img src="../img/dc-logo.png" alt="">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -17,5 +20,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.col-8{
+    height: 15vh;
+    width: 100vw;
+}
+.img{
+    // float: left;
+}
 </style>
