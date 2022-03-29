@@ -1,22 +1,22 @@
 <template>
   <div id="app" class="m-0">
-    <IndexHeader/>
-    <IndexContent/>
-    <IndexFooter/>
+    <Header/>
+    <Content/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import IndexHeader from './components/header.vue';
-import IndexContent from './components/Content.vue';
-import IndexFooter from './components/Footer.vue';
+import Header from './components/header.vue';
+import Content from './components/Content.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    IndexHeader,
-    IndexContent,
-    IndexFooter,
+    Header,
+    Content,
+    Footer,
   }
 }
 </script>
