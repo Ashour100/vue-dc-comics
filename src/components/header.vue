@@ -1,17 +1,19 @@
 <template>
     <div class="header">
+        <div class="contentContainer">
             <div class="header-logo">
                 <img src="../img/dc-logo.png" alt="">
             </div>
             <div class="header-nav">
                 <ul>
-                    <li v-for="(link, index) in headerLinks" :key="index"  :class="(link.current==true)?'active':''" >
+                    <li v-for="(link, index) in headerLinks" :key="index" :class="(link.current==true)?'active':''" >
                         <a :href="link.url" @click="setActivePage(index)">
                             {{ link.text }}
                         </a>
                     </li>
                 </ul>
             </div>
+        </div>
     </div>
 </template>
 
@@ -86,16 +88,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/style.scss';
 .header{
+    height: 13vh;
+}
+.contentContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10rem;
-    height: 15vh;
+    height: 100%;
 }
 .header-logo{
     img{
-        width: 85%;
+        width: 65%;
     }
 }
 .header-nav{
@@ -112,18 +117,19 @@ export default {
             align-items:center;
             a{
                 text-decoration: none;
-                color: black;
-                vertical-align: 1rem;
+                color: $secondary;
+                font-weight: 700;
+                font-size: .6rem;
             }
         }
     }
 }
 .active{
-    border-bottom: 5px solid rgb(42, 42, 255);
+    border-bottom: 5px solid $primary;
     a{
-        color: rgb(42, 42, 255) !important;
+        color: $primary !important;
+        margin-bottom:-5px ;
     }
-    
 }
 
 </style>

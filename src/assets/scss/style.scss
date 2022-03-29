@@ -1,0 +1,13 @@
+@import 'partials/common';
+@import 'partials/variables';
+
+.contentContainer{
+    width: 75vw;
+    height: 100%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

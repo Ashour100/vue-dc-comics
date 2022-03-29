@@ -14,10 +14,10 @@ export default {
 div{
     background-color: rgb(39, 37, 37);
     color:white;
-    height: 14vh;
+    height: 16vh;
     margin: 0;
     h1{
-        line-height: 14vh;
+        line-height: 16vh;
     }
 }
 </style>
