@@ -176,6 +176,7 @@ export default {
         gap: 1rem;
         img{
             width: 1.8rem;
+            cursor: pointer;
         }
         h3{
             color: $primary;
